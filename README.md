@@ -16,8 +16,13 @@ It uses the ["extensions" feature](https://github.com/glance-hub/glance/blob/mai
 - Cronicle job history tracking and statistics
 - Docker containerization for easy deployment
 
+## 🛠️ Configuration & Installation
 
-## 🛠️ Configuration
+Clone the repository:
+```bash
+git clone <repository-url>
+cd <repository-directory>
+```
 
 Copy the default configuration file and modify it with your settings:
 
@@ -37,18 +42,6 @@ docker-compose up -d
 
 Default port is 8000.
 
-## 🚀 Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd <repository-directory>
-```
-
-2. Build and start the container:
-```bash
-docker-compose up -d
-```
 
 ## 🔧 Usage
 
