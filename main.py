@@ -72,7 +72,7 @@ def stats_from_cronicle_history(history):
     """
     Get stats from cronicle history
     Sample Event : 
-        {'code': 0, 'rows': [{'id': 'jm5hw8oxt2g', 'code': 0, 'event': 'em4zvfn340a', 'category': 'general', 'plugin': 'shellplug', 'hostname': 'XXXXX', 'time_start': 1735977600.065, 'elapsed': 0.6050000190734863, 'perf': '', 'cpu': {}, 'mem': {}, 'log_file_size': 635, 'action': 'job_complete', 'epoch': 1735977600, 'event_title': 'XXXXX', 'category_title': 'General', 'plugin_title': 'Shell Script'}]}
+        {'code': 0, 'rows': [{'id': 'xxxxx', 'code': 0, 'event': 'xxxxx', 'category': 'general', 'plugin': 'shellplug', 'hostname': 'XXXXX', 'time_start': 1735977600.065, 'elapsed': 0.6050000190734863, 'perf': '', 'cpu': {}, 'mem': {}, 'log_file_size': 635, 'action': 'job_complete', 'epoch': 1735977600, 'event_title': 'XXXXX', 'category_title': 'General', 'plugin_title': 'Shell Script'}]}
     """
     stats = {}
     for item in history["rows"]:
