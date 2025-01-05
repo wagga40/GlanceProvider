@@ -1,0 +1,15 @@
+services:
+  dash:
+    container_name: dashboard
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - TZ=UTC
+    restart: unless-stopped
+
+networks:
+  dash_network:
+    driver: bridge

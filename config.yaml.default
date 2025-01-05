@@ -1,0 +1,24 @@
+# PiAlert Configuration
+pialert:
+  protocol: "http"                    # Protocol (http or https)
+  host: "localhost"                   # PiAlert server hostname or IP
+  port: "80"                          # PiAlert server port
+  api_path: "/pialert/api/"           # API endpoint path
+  api_key: "<<YOUR PIALERT API KEY>>" # Your PiAlert API key https://github.com/leiweibau/Pi.Alert/blob/main/docs/API-USAGE.md
+  endpoints:
+    - "system-status"                 # List of PiAlert API endpoints to query
+  template_file: "templates/pialert.tmpl"
+
+# Cronicle Configuration
+cronicle:
+  protocol: "http"                      # Protocol (http or https)
+  host: "localhost"                     # Cronicle server hostname or IP
+  port: "3012"                          # Cronicle server port
+  api_path: "/api/app/"                 # API endpoint path
+  api_version: "v1"                     # API version
+  query_limit: 500                      # Maximum number of records to retrieve
+  api_key: "<<YOUR CRONICLE API KEY>>"  # Your Cronicle API key : https://github.com/jhuckaby/Cronicle/blob/master/docs/APIReference.md#api-keys
+  endpoints:
+    - "get_history"                     # List of Cronicle API endpoints to query
+  date_format: "%Y/%m/%d %H:%M:%S"      # Date format for last_run
+  template_file: "templates/cronicle.tmpl"

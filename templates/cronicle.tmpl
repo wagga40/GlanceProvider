@@ -1,0 +1,14 @@
+<ul class="list list-gap-10 collapsible-container" data-collapse-after="3">
+    {% for event, stats in data.items() %}
+    <li>
+        <p class="color-primary">{{ event }}</a>
+        <ul class="list collapsible-container">
+            <ul class="list-horizontal-text">
+                <li>{{ stats.count }} run(s)</li>
+                <li>{% if stats.error > 0 %}<span class="color-negative">{{ stats.error }}</span>{% else %}{{ stats.error }}{% endif %} error(s)</li>
+            </ul>
+            <li><span class="color-highlight">Last Run :</span>  {{ stats.last_run }}</li>
+        </ul>
+    </li>
+    {% endfor %}
+</ul>
