@@ -52,13 +52,13 @@ Add the following to your Glance configuration:
 ```yaml
 # PiAlert Widget
 - type: extension
-  url: http://pialert.ip.address.or.domain:8000/pialert
+  url: http://provider.ip.address.or.domain:8000/pialert
   cache: 1s
   allow-potentially-dangerous-html: true
 
 # Cronicle Widget
 - type: extension
-  url: http://cronicle.ip.address.or.domain:8000/cronicle
+  url: http://provider.ip.address.or.domain:8000/cronicle
   cache: 1s
   allow-potentially-dangerous-html: true
 ```
