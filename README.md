@@ -20,8 +20,8 @@ It uses the ["extensions" feature](https://github.com/glance-hub/glance/blob/mai
 
 Clone the repository:
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/wagga40/GlanceProvider.git
+cd GlanceProvider
 ```
 
 Copy the default configuration file and modify it with your settings:
